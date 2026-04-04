@@ -1,0 +1,10 @@
+.amenity-container{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(181, 90, 75, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}

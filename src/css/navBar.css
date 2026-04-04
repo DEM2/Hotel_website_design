@@ -1,0 +1,113 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 2%;
+    position: relative; /* necesario para centrar el nombre */
+}
+
+/* ===== MENU ===== */
+.menu_list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu_list li a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    display: inline-block; /* mejora hover */
+}
+
+/* Línea animada */
+.menu_list li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #FDC830, #F37335);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.menu_list li a:hover::after {
+    width: 100%;
+}
+
+/* ===== NOMBRE HOTEL ===== */
+.nameHotel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    font-size: larger;
+    color: white;
+}
+
+/* ===== BOTÓN ===== */
+.ctBtn {
+    font-weight: 300;
+    border: .5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Fondo animado */
+.ctBtn::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FDC830, #F37335);
+    transition: right 0.4s ease-in-out;
+   
+}
+
+.ctBtn:hover {
+    border-color: transparent;
+    transition: border-color 0.4s ease
+}
+
+.ctBtn:hover::before {
+    right: 0;
+}
+
+/* Texto del botón */
+.ctBtn span {
+    position: relative;
+    transition: 0.5s;
+}
+
+/* Flecha */
+.ctBtn span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.ctBtn:hover span {
+    padding-right: 20px;
+}
+
+.ctBtn:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+

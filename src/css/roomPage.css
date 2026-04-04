@@ -1,0 +1,27 @@
+.header-roomPg {
+  background-image: url('../assets/background_2.jpg');
+  height: 80vh;
+  background-position: 50% 70%;
+  background-size: cover;
+  position: relative;
+}
+
+.roomPg-title {
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 200;
+  top: 200px;
+  left: 600px;
+  color: white
+}
+
+.Room-ct {
+  padding: 20px 150px;
+}
+
+.Room-tl2 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}

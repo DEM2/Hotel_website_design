@@ -1,0 +1,16 @@
+.home {
+     background-image: url('../assets/background.jpg') ;
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     position: relative;
+} 
+
+.mean_title {
+     position: absolute;
+     top: 200px;
+     left: 100px;
+     color: aliceblue;
+     font-weight: 300;
+     
+}
