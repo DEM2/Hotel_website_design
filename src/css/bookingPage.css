@@ -1,0 +1,133 @@
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.booking-left {
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    height: 350px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.booking-left h1 {
+    font-weight: 300;
+}
+
+.booking-right {
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    height: 450px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.booking-right h2{
+    font-weight: 300;
+}
+
+.BDt {
+    display: flex;
+    gap: 25px;
+}
+
+.BDt h3{
+    font-weight: 400;
+}
+
+.BDt h4 {
+    font-weight: 500;
+    font-size: small;
+    margin: 0;
+    color: gray;
+}
+
+.dates-container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.date-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.divider {
+    background-color: rgba(0,0,0,0.1);
+    width: 1px;
+}
+
+.date-label {
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.date-main {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.date-sub {
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.nights {
+    grid-column: 1 / -1;  /* ocupa toda la fila */
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+.booking-right img {
+    height: 100px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.BPr{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.BPr h3 {
+    font-weight: 400;
+}
+
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cancel {
+    flex: 1;
+    height: 45px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(181, 90, 75, 0.4);
+    background: transparent;
+    color: #B55A4B;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-reserve {
+    flex: 1;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: #B55A4B;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}

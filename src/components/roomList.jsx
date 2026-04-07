@@ -4,12 +4,12 @@ import { RoomContext } from '../context/roomContext';
 import "../css/roomCard.css"
 
 const ListRooms = () => {
-    const { rooms } = useContext(RoomContext);
+    const { roomType } = useContext(RoomContext);
 
     return (
         <div>
             <div className='Card-wrap'>
-                {rooms.map((room) => (
+                {roomType.map((room) => (
                     <Room room={room} key={room.id} />
                 ))}
             </div>

@@ -4,22 +4,11 @@ import { roomData } from '../data';
 export const RoomContext = createContext();
 
 const RoomProvider = ({ children }) => {
-    const [rooms, setRooms] = useState(roomData.roomTypes);
-    const [tipo, setTipo] = useState('Ordinario');
+    const [roomType, setRooms] = useState(roomData.roomTypes);
 
-    const handleClick = (e) => {
-        e.preventDefault();
-
-        // Filtrar las habitaciones por tipo
-        const newRooms = roomData.roomTypes.filter((room) => {
-            return tipo.toLowerCase() === room.category.toLowerCase();
-        });
-
-        setRooms(newRooms);
-    };
 
     return (
-        <RoomContext.Provider value={{ rooms, tipo, setTipo, handleClick }}>
+        <RoomContext.Provider value={{ roomType }}>
             {children}
         </RoomContext.Provider>
     );
